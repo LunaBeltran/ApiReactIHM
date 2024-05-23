@@ -1,0 +1,96 @@
+@import url('https://fonts.cdnfonts.com/css/bebas-neue');
+@import url('https://fonts.cdnfonts.com/css/inclusive-sans-2');
+
+.movie-cardCart {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    background-color: #000000;
+    margin: 0 10px; /* Ajustar margen para disminuir el espacio entre las tarjetas */
+    padding: 10px;
+    width: 150px; /* Ajustar el ancho de las tarjetas */
+}
+
+.movie-cardCart:hover {
+    transform: scale(1.05);
+}
+
+.Cartelera {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    max-width: 1000px; /* Ajustar el ancho del contenedor del carrusel */
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
+.movie-cardCart img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.tituloCuartoP {
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 75px; /* Tamaño de fuente del título */
+    text-align: center;
+    color: #F2F2F2;
+    text-transform: uppercase;
+}
+
+.tituloCuartoP::after {
+    content: "";
+    display: block;
+    width: 55%;
+    height: 2px;
+    background: red;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+.tituloCart {
+    margin: 10px 0;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px; /* Disminuir el tamaño de la fuente */
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #ffffff;
+}
+
+.fechaCart {
+    margin: 10px 0;
+    color: #f0ebeb;
+    font-family: 'Inclusive Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 800px;
+}
+
+/* Estilos personalizados para las flechas de slick */
+.slick-prev, .slick-next {
+    width: 40px; /* Ajusta el tamaño según sea necesario */
+    height: 40px; /* Ajusta el tamaño según sea necesario */
+    z-index: 1;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 50px; /* Tamaño del ícono */
+    color: white; /* Cambia a cualquier color que desees */
+}
+
+/* Personaliza la posición de las flechas */
+.slick-prev {
+    left: 10px; /* Ajusta la posición izquierda */
+}
+
+.slick-next {
+    right: 10px; /* Ajusta la posición derecha */
+}
+
+
+
